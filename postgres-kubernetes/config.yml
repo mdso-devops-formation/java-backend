@@ -1,0 +1,12 @@
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: postgres-configuration
+  namespace: kube-data
+  labels:
+    app: postgres
+data:
+  POSTGRES_DB: ymidatabase
+  POSTGRES_USER: ymiuser
+  POSTGRES_PASSWORD: ymipassword
